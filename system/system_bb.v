@@ -19,6 +19,6 @@ module system (
 	output		lcd_16x2_external_interface_EN;
 	output		lcd_16x2_external_interface_RS;
 	output		lcd_16x2_external_interface_RW;
-	output	[15:0]	led_pio_external_connection_export;
+	output	[16:0]	led_pio_external_connection_export;
 	input		reset_reset_n;
 endmodule

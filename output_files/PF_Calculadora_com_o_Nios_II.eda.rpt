@@ -1,5 +1,5 @@
 EDA Netlist Writer report for PF_Calculadora_com_o_Nios_II
-Thu Dec 15 15:07:51 2022
+Thu Dec 15 18:37:09 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Dec 15 15:07:51 2022 ;
+; EDA Netlist Writer Status ; Successful - Thu Dec 15 18:37:09 2022 ;
 ; Revision Name             ; PF_Calculadora_com_o_Nios_II          ;
 ; Top-level Entity Name     ; topo                                  ;
 ; Family                    ; Cyclone IV E                          ;
@@ -81,13 +81,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Dec 15 15:07:48 2022
+    Info: Processing started: Thu Dec 15 18:37:06 2022
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off PF_Calculadora_com_o_Nios_II -c PF_Calculadora_com_o_Nios_II
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file PF_Calculadora_com_o_Nios_II.vho in folder "/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 644 megabytes
-    Info: Processing ended: Thu Dec 15 15:07:51 2022
+    Info: Peak virtual memory: 643 megabytes
+    Info: Processing ended: Thu Dec 15 18:37:09 2022
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 

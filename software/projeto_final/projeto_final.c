@@ -44,11 +44,13 @@ void limpa_lcd(alt_up_character_lcd_dev * lcd){
 void limpa_linha(alt_up_character_lcd_dev * lcd, int linha){
 	alt_up_character_lcd_set_cursor_pos(lcd, 0, linha);
 	alt_up_character_lcd_string(lcd, "                ");
+	alt_up_character_lcd_set_cursor_pos(lcd, 0, linha);
 }
 
-void limpa_linha_atual(alt_up_character_lcd_dev * lcd, int pos_inicial){
-	alt_up_character_lcd_shift_cursor(lcd, -pos_inicial);
+void limpa_linha_atual(alt_up_character_lcd_dev * lcd){
+	alt_up_character_lcd_shift_cursor(lcd, -16);
 	alt_up_character_lcd_string(lcd, "                ");
+	alt_up_character_lcd_shift_cursor(lcd, -16);
 }
 
 int ler_operando(){
@@ -98,11 +100,10 @@ int main(void) {
 //	alt_up_character_lcd_cursor_off(dispositivo_LCD);
 
 	int estado = 0, operacao = 0, operando1 = 0, operando2 = 0, enter = 0, resultado_final = 0;
-	char primeira_linha[16], segunda_linha[16], operador[2], conta[8], pos_x = 0;
+	char primeira_linha[16], segunda_linha[16], operador[2], conta[14], pos_x = 0, linha_atual = 0;
 
 	while (1){
-
-		limpa_linha_atual(dispositivo_LCD, pos_x);
+//		limpa_linha(dispositivo_LCD, linha_atual);
 //		limpa_linha(dispositivo_LCD, linha_atual);
 //		limpa_lcd(dispositivo_LCD);
 //		alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 0);
@@ -115,18 +116,35 @@ int main(void) {
 
 			   sprintf(primeira_linha, "Operador: %s", operador);
 
+			   limpa_linha(dispositivo_LCD, 0);
 			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 0);
 			   alt_up_character_lcd_string(dispositivo_LCD, primeira_linha);
 
 			   enter = ler_enter();
 
 			   if (enter) {
+				  // Define o próximo estado
 				  if ((operacao == 0) | (operacao == 1)) estado = op2_ent;
 				  else estado = op1_ent;
 
+				  // Atualiza a posição x
+				  pos_x = strlen(primeira_linha);
+
+				  // Traduz a operação escolhia para o nome por extenso
+				  // e grava o resultado em "primeira_linha"
 				  traduz_operador_extenso(operacao, primeira_linha);
-				  alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 0);
+
+				  // Limpa a linha atual a partir de uma posição
+				  limpa_linha(dispositivo_LCD, 0);
+
+				  // Posiciona o cursor na primeira linha, escreve a operação
+				  // por extenso e posiciona o cursor na segunda linha
 				  alt_up_character_lcd_string(dispositivo_LCD, primeira_linha);
+				  alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 1);
+
+				  // Atualiza a posição x
+				  pos_x = 0;
+				  linha_atual = 1;
 			   }
 			   break;
 
@@ -139,6 +157,7 @@ int main(void) {
 			   IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE,operando1);
 
 			   sprintf(conta, "%s%d", operador, operando1);
+			   limpa_linha(dispositivo_LCD, 1);
 			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 1);
 			   alt_up_character_lcd_string(dispositivo_LCD, conta);
 
@@ -147,7 +166,16 @@ int main(void) {
 
 			   enter = ler_enter();
 
-			   if (enter) estado = resultado;
+			   if (enter) {
+				   estado = resultado;
+
+				   sprintf(segunda_linha, "%s = ", conta);
+
+				   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 1);
+				   alt_up_character_lcd_string(dispositivo_LCD, segunda_linha);
+
+				   pos_x = strlen(segunda_linha);
+			   }
 			   enter = 0;
 			   break;
 
@@ -160,12 +188,13 @@ int main(void) {
 			   IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE,operando1);
 
 			   sprintf(conta, "%d %s", operando1, operador);
-			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 1);
+			   limpa_linha(dispositivo_LCD, 1);
 			   alt_up_character_lcd_string(dispositivo_LCD, conta);
+
+			   pos_x = strlen(conta);
 
 			   // Desloca o cursor para a esquerda
 			   alt_up_character_lcd_shift_cursor(dispositivo_LCD, -3);
-
 			   enter = ler_enter();
 
 			   if (enter) estado = op_2;
@@ -182,9 +211,24 @@ int main(void) {
 			   sprintf(conta, "%d %s %d", operando1, operador, operando2);
 			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 1);
 			   alt_up_character_lcd_string(dispositivo_LCD, conta);
+
+			   pos_x = strlen(conta);
+
+			   // Desloca o cursor para a esquerda
+			   alt_up_character_lcd_shift_cursor(dispositivo_LCD, -1);
+
 			   enter = ler_enter();
 
-			   if (enter) estado = resultado;
+			   if (enter){
+				   estado = resultado;
+				   limpa_linha(dispositivo_LCD, 0);
+
+				   sprintf(primeira_linha, "%s = ", conta);
+				   alt_up_character_lcd_string(dispositivo_LCD, primeira_linha);
+
+				   limpa_linha(dispositivo_LCD, 1);
+				   pos_x = 0;
+			   }
 			   break;
 
 			case resultado:
@@ -192,16 +236,24 @@ int main(void) {
 //			   alt_up_character_lcd_string(dispositivo_LCD, primeira_linha);
 
 			   resultado_final = calcula(operacao, operando1, operando2);
-			   IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE,resultado_final);
+			   IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE, resultado_final);
 
-			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 1);
-			   sprintf(segunda_linha, "%s = %d", conta, resultado_final);
+//			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 1);
+//			   sprintf(segunda_linha, "%s = %d", conta, resultado_final);
+//			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 1);
+//			   alt_up_character_lcd_string(dispositivo_LCD, segunda_linha);
+
+
+			   sprintf(segunda_linha, "%d", resultado_final);
+			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, pos_x, 1);
 			   alt_up_character_lcd_string(dispositivo_LCD, segunda_linha);
 
 			   enter = ler_enter();
 
-			   if (enter) estado = idle;
-			   enter = 0;
+			   if (enter) {
+				   estado = idle;
+				   limpa_lcd(dispositivo_LCD);
+			   }
 			   break;
 			default:
 			   estado = idle;

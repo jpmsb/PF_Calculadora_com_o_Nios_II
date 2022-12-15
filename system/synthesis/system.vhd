@@ -16,7 +16,7 @@ entity system is
 		lcd_16x2_external_interface_EN         : out   std_logic;                                        --                                .EN
 		lcd_16x2_external_interface_RS         : out   std_logic;                                        --                                .RS
 		lcd_16x2_external_interface_RW         : out   std_logic;                                        --                                .RW
-		led_pio_external_connection_export     : out   std_logic_vector(15 downto 0);                    --     led_pio_external_connection.export
+		led_pio_external_connection_export     : out   std_logic_vector(16 downto 0);                    --     led_pio_external_connection.export
 		reset_reset_n                          : in    std_logic                     := '0'              --                           reset.reset_n
 	);
 end entity system;
@@ -76,7 +76,7 @@ architecture rtl of system is
 			writedata  : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
 			chipselect : in  std_logic                     := 'X';             -- chipselect
 			readdata   : out std_logic_vector(31 downto 0);                    -- readdata
-			out_port   : out std_logic_vector(15 downto 0)                     -- export
+			out_port   : out std_logic_vector(16 downto 0)                     -- export
 		);
 	end component system_led_pio;
 

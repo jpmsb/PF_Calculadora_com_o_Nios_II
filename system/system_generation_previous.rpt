@@ -63,26 +63,26 @@ Info: system.sysid: System ID is not assigned automatically. Edit the System ID 
 Info: system.sysid: Time stamp will be automatically updated when this component is generated.
 Info: system: Generating system "system" for QUARTUS_SYNTH
 Info: entrada_pio: Starting RTL generation for module 'system_entrada_pio'
-Info: entrada_pio:   Generation command is [exec /opt/Quartus/20.1/quartus/linux64/perl/bin/perl -I /opt/Quartus/20.1/quartus/linux64/perl/lib -I /opt/Quartus/20.1/quartus/sopc_builder/bin/europa -I /opt/Quartus/20.1/quartus/sopc_builder/bin -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=system_entrada_pio --dir=/tmp/alt9338_8717619796130298315.dir/0002_entrada_pio_gen/ --quartus_dir=/opt/Quartus/20.1/quartus --verilog --config=/tmp/alt9338_8717619796130298315.dir/0002_entrada_pio_gen//system_entrada_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: entrada_pio:   Generation command is [exec /opt/Quartus/20.1/quartus/linux64/perl/bin/perl -I /opt/Quartus/20.1/quartus/linux64/perl/lib -I /opt/Quartus/20.1/quartus/sopc_builder/bin/europa -I /opt/Quartus/20.1/quartus/sopc_builder/bin -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=system_entrada_pio --dir=/tmp/alt9338_6420266558180831597.dir/0002_entrada_pio_gen/ --quartus_dir=/opt/Quartus/20.1/quartus --verilog --config=/tmp/alt9338_6420266558180831597.dir/0002_entrada_pio_gen//system_entrada_pio_component_configuration.pl  --do_build_sim=0  ]
 Info: entrada_pio: Done RTL generation for module 'system_entrada_pio'
 Info: entrada_pio: "system" instantiated altera_avalon_pio "entrada_pio"
 Info: jtag_uart: Starting RTL generation for module 'system_jtag_uart'
-Info: jtag_uart:   Generation command is [exec /opt/Quartus/20.1/quartus/linux64/perl/bin/perl -I /opt/Quartus/20.1/quartus/linux64/perl/lib -I /opt/Quartus/20.1/quartus/sopc_builder/bin/europa -I /opt/Quartus/20.1/quartus/sopc_builder/bin -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=system_jtag_uart --dir=/tmp/alt9338_8717619796130298315.dir/0003_jtag_uart_gen/ --quartus_dir=/opt/Quartus/20.1/quartus --verilog --config=/tmp/alt9338_8717619796130298315.dir/0003_jtag_uart_gen//system_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart:   Generation command is [exec /opt/Quartus/20.1/quartus/linux64/perl/bin/perl -I /opt/Quartus/20.1/quartus/linux64/perl/lib -I /opt/Quartus/20.1/quartus/sopc_builder/bin/europa -I /opt/Quartus/20.1/quartus/sopc_builder/bin -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=system_jtag_uart --dir=/tmp/alt9338_6420266558180831597.dir/0003_jtag_uart_gen/ --quartus_dir=/opt/Quartus/20.1/quartus --verilog --config=/tmp/alt9338_6420266558180831597.dir/0003_jtag_uart_gen//system_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag_uart: Done RTL generation for module 'system_jtag_uart'
 Info: jtag_uart: "system" instantiated altera_avalon_jtag_uart "jtag_uart"
 Info: lcd_16x2: Starting Generation of Character LCD
 Info: lcd_16x2: "system" instantiated altera_up_avalon_character_lcd "lcd_16x2"
 Info: led_pio: Starting RTL generation for module 'system_led_pio'
-Info: led_pio:   Generation command is [exec /opt/Quartus/20.1/quartus/linux64/perl/bin/perl -I /opt/Quartus/20.1/quartus/linux64/perl/lib -I /opt/Quartus/20.1/quartus/sopc_builder/bin/europa -I /opt/Quartus/20.1/quartus/sopc_builder/bin -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=system_led_pio --dir=/tmp/alt9338_8717619796130298315.dir/0005_led_pio_gen/ --quartus_dir=/opt/Quartus/20.1/quartus --verilog --config=/tmp/alt9338_8717619796130298315.dir/0005_led_pio_gen//system_led_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: led_pio:   Generation command is [exec /opt/Quartus/20.1/quartus/linux64/perl/bin/perl -I /opt/Quartus/20.1/quartus/linux64/perl/lib -I /opt/Quartus/20.1/quartus/sopc_builder/bin/europa -I /opt/Quartus/20.1/quartus/sopc_builder/bin -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=system_led_pio --dir=/tmp/alt9338_6420266558180831597.dir/0005_led_pio_gen/ --quartus_dir=/opt/Quartus/20.1/quartus --verilog --config=/tmp/alt9338_6420266558180831597.dir/0005_led_pio_gen//system_led_pio_component_configuration.pl  --do_build_sim=0  ]
 Info: led_pio: Done RTL generation for module 'system_led_pio'
 Info: led_pio: "system" instantiated altera_avalon_pio "led_pio"
 Info: nios2_0: "system" instantiated altera_nios2_gen2 "nios2_0"
 Info: onchip_mem: Starting RTL generation for module 'system_onchip_mem'
-Info: onchip_mem:   Generation command is [exec /opt/Quartus/20.1/quartus/linux64/perl/bin/perl -I /opt/Quartus/20.1/quartus/linux64/perl/lib -I /opt/Quartus/20.1/quartus/sopc_builder/bin/europa -I /opt/Quartus/20.1/quartus/sopc_builder/bin -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=system_onchip_mem --dir=/tmp/alt9338_8717619796130298315.dir/0006_onchip_mem_gen/ --quartus_dir=/opt/Quartus/20.1/quartus --verilog --config=/tmp/alt9338_8717619796130298315.dir/0006_onchip_mem_gen//system_onchip_mem_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_mem:   Generation command is [exec /opt/Quartus/20.1/quartus/linux64/perl/bin/perl -I /opt/Quartus/20.1/quartus/linux64/perl/lib -I /opt/Quartus/20.1/quartus/sopc_builder/bin/europa -I /opt/Quartus/20.1/quartus/sopc_builder/bin -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=system_onchip_mem --dir=/tmp/alt9338_6420266558180831597.dir/0006_onchip_mem_gen/ --quartus_dir=/opt/Quartus/20.1/quartus --verilog --config=/tmp/alt9338_6420266558180831597.dir/0006_onchip_mem_gen//system_onchip_mem_component_configuration.pl  --do_build_sim=0  ]
 Info: onchip_mem: Done RTL generation for module 'system_onchip_mem'
 Info: onchip_mem: "system" instantiated altera_avalon_onchip_memory2 "onchip_mem"
 Info: sys_clk_timer: Starting RTL generation for module 'system_sys_clk_timer'
-Info: sys_clk_timer:   Generation command is [exec /opt/Quartus/20.1/quartus/linux64//perl/bin/perl -I /opt/Quartus/20.1/quartus/linux64//perl/lib -I /opt/Quartus/20.1/quartus/sopc_builder/bin/europa -I /opt/Quartus/20.1/quartus/sopc_builder/bin -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=system_sys_clk_timer --dir=/tmp/alt9338_8717619796130298315.dir/0007_sys_clk_timer_gen/ --quartus_dir=/opt/Quartus/20.1/quartus --verilog --config=/tmp/alt9338_8717619796130298315.dir/0007_sys_clk_timer_gen//system_sys_clk_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: sys_clk_timer:   Generation command is [exec /opt/Quartus/20.1/quartus/linux64//perl/bin/perl -I /opt/Quartus/20.1/quartus/linux64//perl/lib -I /opt/Quartus/20.1/quartus/sopc_builder/bin/europa -I /opt/Quartus/20.1/quartus/sopc_builder/bin -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- /opt/Quartus/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=system_sys_clk_timer --dir=/tmp/alt9338_6420266558180831597.dir/0007_sys_clk_timer_gen/ --quartus_dir=/opt/Quartus/20.1/quartus --verilog --config=/tmp/alt9338_6420266558180831597.dir/0007_sys_clk_timer_gen//system_sys_clk_timer_component_configuration.pl  --do_build_sim=0  ]
 Info: sys_clk_timer: Done RTL generation for module 'system_sys_clk_timer'
 Info: sys_clk_timer: "system" instantiated altera_avalon_timer "sys_clk_timer"
 Info: sysid: "system" instantiated altera_avalon_sysid_qsys "sysid"
@@ -98,21 +98,21 @@ Info: mm_interconnect_0: "system" instantiated altera_mm_interconnect "mm_interc
 Info: irq_mapper: "system" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "system" instantiated altera_reset_controller "rst_controller"
 Info: cpu: Starting RTL generation for module 'system_nios2_0_cpu'
-Info: cpu:   Generation command is [exec /opt/Quartus/20.1/quartus/linux64//perl/bin/perl -I /opt/Quartus/20.1/quartus/linux64//perl/lib -I /opt/Quartus/20.1/quartus/sopc_builder/bin/europa -I /opt/Quartus/20.1/quartus/sopc_builder/bin -I /opt/Quartus/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /opt/Quartus/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /opt/Quartus/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /opt/Quartus/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /opt/Quartus/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=system_nios2_0_cpu --dir=/tmp/alt9338_8717619796130298315.dir/0011_cpu_gen/ --quartus_bindir=/opt/Quartus/20.1/quartus/linux64/ --verilog --config=/tmp/alt9338_8717619796130298315.dir/0011_cpu_gen//system_nios2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2022.12.12 20:14:42 (*) Starting Nios II generation
-Info: cpu: # 2022.12.12 20:14:42 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2022.12.12 20:14:42 (*)   Creating all objects for CPU
-Info: cpu: # 2022.12.12 20:14:42 (*)     Testbench
-Info: cpu: # 2022.12.12 20:14:42 (*)     Instruction decoding
-Info: cpu: # 2022.12.12 20:14:42 (*)       Instruction fields
-Info: cpu: # 2022.12.12 20:14:42 (*)       Instruction decodes
-Info: cpu: # 2022.12.12 20:14:42 (*)       Signals for RTL simulation waveforms
-Info: cpu: # 2022.12.12 20:14:42 (*)       Instruction controls
-Info: cpu: # 2022.12.12 20:14:42 (*)     Pipeline frontend
-Info: cpu: # 2022.12.12 20:14:42 (*)     Pipeline backend
-Info: cpu: # 2022.12.12 20:14:43 (*)   Generating RTL from CPU objects
-Info: cpu: # 2022.12.12 20:14:43 (*)   Creating plain-text RTL
-Info: cpu: # 2022.12.12 20:14:44 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec /opt/Quartus/20.1/quartus/linux64//perl/bin/perl -I /opt/Quartus/20.1/quartus/linux64//perl/lib -I /opt/Quartus/20.1/quartus/sopc_builder/bin/europa -I /opt/Quartus/20.1/quartus/sopc_builder/bin -I /opt/Quartus/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /opt/Quartus/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /opt/Quartus/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /opt/Quartus/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /opt/Quartus/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=system_nios2_0_cpu --dir=/tmp/alt9338_6420266558180831597.dir/0011_cpu_gen/ --quartus_bindir=/opt/Quartus/20.1/quartus/linux64/ --verilog --config=/tmp/alt9338_6420266558180831597.dir/0011_cpu_gen//system_nios2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2022.12.12 20:35:51 (*) Starting Nios II generation
+Info: cpu: # 2022.12.12 20:35:51 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2022.12.12 20:35:51 (*)   Creating all objects for CPU
+Info: cpu: # 2022.12.12 20:35:51 (*)     Testbench
+Info: cpu: # 2022.12.12 20:35:51 (*)     Instruction decoding
+Info: cpu: # 2022.12.12 20:35:51 (*)       Instruction fields
+Info: cpu: # 2022.12.12 20:35:51 (*)       Instruction decodes
+Info: cpu: # 2022.12.12 20:35:51 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2022.12.12 20:35:51 (*)       Instruction controls
+Info: cpu: # 2022.12.12 20:35:51 (*)     Pipeline frontend
+Info: cpu: # 2022.12.12 20:35:51 (*)     Pipeline backend
+Info: cpu: # 2022.12.12 20:35:52 (*)   Generating RTL from CPU objects
+Info: cpu: # 2022.12.12 20:35:52 (*)   Creating plain-text RTL
+Info: cpu: # 2022.12.12 20:35:52 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'system_nios2_0_cpu'
 Info: cpu: "nios2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info: nios2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_0_data_master_translator"

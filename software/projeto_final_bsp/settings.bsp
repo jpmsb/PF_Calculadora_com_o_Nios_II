@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 15, 2022 3:08:16 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1671127696425</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 15, 2022 6:37:51 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1671140271979</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/software/projeto_final_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../system.sopcinfo</SopcDesignFile>

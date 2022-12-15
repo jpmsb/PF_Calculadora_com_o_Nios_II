@@ -12,7 +12,7 @@ module system (
 		output wire        lcd_16x2_external_interface_EN,         //                                .EN
 		output wire        lcd_16x2_external_interface_RS,         //                                .RS
 		output wire        lcd_16x2_external_interface_RW,         //                                .RW
-		output wire [15:0] led_pio_external_connection_export,     //     led_pio_external_connection.export
+		output wire [16:0] led_pio_external_connection_export,     //     led_pio_external_connection.export
 		input  wire        reset_reset_n                           //                           reset.reset_n
 	);
 
