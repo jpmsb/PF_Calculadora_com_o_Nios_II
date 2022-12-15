@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Dec 15 15:07:38 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : PF_Calculadora_com_o_Nios_II
+Top-level Entity Name : topo
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 3,842 / 114,480 ( 3 % )
+    Total combinational functions : 3,467 / 114,480 ( 3 % )
+    Dedicated logic registers : 2,318 / 114,480 ( 2 % )
+Total registers : 2318
+Total pins : 85 / 529 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 374,016 / 3,981,312 ( 9 % )
+Embedded Multiplier 9-bit elements : 6 / 532 ( 1 % )
+Total PLLs : 0 / 4 ( 0 % )

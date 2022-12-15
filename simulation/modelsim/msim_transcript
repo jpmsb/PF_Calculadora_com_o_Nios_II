@@ -1,0 +1,692 @@
+# ERROR: No extended dataflow license exists
+# do PF_Calculadora_com_o_Nios_II_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /opt/Quartus/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlib system
+# ** Warning: (vlib-34) Library already exists at "system".
+# vmap system system
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap system system 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_reset_controller.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:44 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_reset_controller.v 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 11:37:44 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_reset_synchronizer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:44 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_reset_synchronizer.v 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 11:37:44 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_up_character_lcd_communication.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:44 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_up_character_lcd_communication.v 
+# -- Compiling module altera_up_character_lcd_communication
+# 
+# Top level modules:
+# 	altera_up_character_lcd_communication
+# End time: 11:37:44 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_up_character_lcd_initialization.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:44 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_up_character_lcd_initialization.v 
+# -- Compiling module altera_up_character_lcd_initialization
+# 
+# Top level modules:
+# 	altera_up_character_lcd_initialization
+# End time: 11:37:44 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_entrada_pio.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:44 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_entrada_pio.v 
+# -- Compiling module system_entrada_pio
+# 
+# Top level modules:
+# 	system_entrada_pio
+# End time: 11:37:44 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_jtag_uart.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:44 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_jtag_uart.v 
+# -- Compiling module system_jtag_uart_sim_scfifo_w
+# -- Compiling module system_jtag_uart_scfifo_w
+# -- Compiling module system_jtag_uart_sim_scfifo_r
+# -- Compiling module system_jtag_uart_scfifo_r
+# -- Compiling module system_jtag_uart
+# 
+# Top level modules:
+# 	system_jtag_uart
+# End time: 11:37:44 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_lcd_16x2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:44 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_lcd_16x2.v 
+# -- Compiling module system_lcd_16x2
+# 
+# Top level modules:
+# 	system_lcd_16x2
+# End time: 11:37:44 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_led_pio.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:44 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_led_pio.v 
+# -- Compiling module system_led_pio
+# 
+# Top level modules:
+# 	system_led_pio
+# End time: 11:37:44 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:44 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0.v 
+# -- Compiling module system_mm_interconnect_0
+# 
+# Top level modules:
+# 	system_mm_interconnect_0
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_avalon_st_adapter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_avalon_st_adapter.v 
+# -- Compiling module system_mm_interconnect_0_avalon_st_adapter
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_avalon_st_adapter
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_avalon_st_adapter_001.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_avalon_st_adapter_001.v 
+# -- Compiling module system_mm_interconnect_0_avalon_st_adapter_001
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_avalon_st_adapter_001
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0.v 
+# -- Compiling module system_nios2_0
+# 
+# Top level modules:
+# 	system_nios2_0
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu.v 
+# -- Compiling module system_nios2_0_cpu_ic_data_module
+# -- Compiling module system_nios2_0_cpu_ic_tag_module
+# -- Compiling module system_nios2_0_cpu_bht_module
+# -- Compiling module system_nios2_0_cpu_register_bank_a_module
+# -- Compiling module system_nios2_0_cpu_register_bank_b_module
+# -- Compiling module system_nios2_0_cpu_dc_tag_module
+# -- Compiling module system_nios2_0_cpu_dc_data_module
+# -- Compiling module system_nios2_0_cpu_dc_victim_module
+# -- Compiling module system_nios2_0_cpu_nios2_oci_debug
+# -- Compiling module system_nios2_0_cpu_nios2_oci_break
+# -- Compiling module system_nios2_0_cpu_nios2_oci_xbrk
+# -- Compiling module system_nios2_0_cpu_nios2_oci_dbrk
+# -- Compiling module system_nios2_0_cpu_nios2_oci_itrace
+# -- Compiling module system_nios2_0_cpu_nios2_oci_td_mode
+# -- Compiling module system_nios2_0_cpu_nios2_oci_dtrace
+# -- Compiling module system_nios2_0_cpu_nios2_oci_compute_input_tm_cnt
+# -- Compiling module system_nios2_0_cpu_nios2_oci_fifo_wrptr_inc
+# -- Compiling module system_nios2_0_cpu_nios2_oci_fifo_cnt_inc
+# -- Compiling module system_nios2_0_cpu_nios2_oci_fifo
+# -- Compiling module system_nios2_0_cpu_nios2_oci_pib
+# -- Compiling module system_nios2_0_cpu_nios2_oci_im
+# -- Compiling module system_nios2_0_cpu_nios2_performance_monitors
+# -- Compiling module system_nios2_0_cpu_nios2_avalon_reg
+# -- Compiling module system_nios2_0_cpu_ociram_sp_ram_module
+# -- Compiling module system_nios2_0_cpu_nios2_ocimem
+# -- Compiling module system_nios2_0_cpu_nios2_oci
+# -- Compiling module system_nios2_0_cpu
+# 
+# Top level modules:
+# 	system_nios2_0_cpu_nios2_performance_monitors
+# 	system_nios2_0_cpu
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_debug_slave_sysclk.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_debug_slave_sysclk.v 
+# -- Compiling module system_nios2_0_cpu_debug_slave_sysclk
+# 
+# Top level modules:
+# 	system_nios2_0_cpu_debug_slave_sysclk
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_debug_slave_tck.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_debug_slave_tck.v 
+# -- Compiling module system_nios2_0_cpu_debug_slave_tck
+# 
+# Top level modules:
+# 	system_nios2_0_cpu_debug_slave_tck
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_debug_slave_wrapper.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_debug_slave_wrapper.v 
+# -- Compiling module system_nios2_0_cpu_debug_slave_wrapper
+# 
+# Top level modules:
+# 	system_nios2_0_cpu_debug_slave_wrapper
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_mult_cell.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_mult_cell.v 
+# -- Compiling module system_nios2_0_cpu_mult_cell
+# 
+# Top level modules:
+# 	system_nios2_0_cpu_mult_cell
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_test_bench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_test_bench.v 
+# -- Compiling module system_nios2_0_cpu_test_bench
+# 
+# Top level modules:
+# 	system_nios2_0_cpu_test_bench
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_onchip_mem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_onchip_mem.v 
+# -- Compiling module system_onchip_mem
+# 
+# Top level modules:
+# 	system_onchip_mem
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_sys_clk_timer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_sys_clk_timer.v 
+# -- Compiling module system_sys_clk_timer
+# 
+# Top level modules:
+# 	system_sys_clk_timer
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_sysid.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_sysid.v 
+# -- Compiling module system_sysid
+# 
+# Top level modules:
+# 	system_sysid
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/system.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/system.v 
+# -- Compiling module system
+# 
+# Top level modules:
+# 	system
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/altera_mult_add_vkp2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/altera_mult_add_vkp2.v 
+# -- Compiling module altera_mult_add_vkp2
+# 
+# Top level modules:
+# 	altera_mult_add_vkp2
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_avalon_sc_fifo.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -vlog01compat -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_avalon_sc_fifo.v 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_arbitrator.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_arbitrator.sv 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_burst_adapter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_burst_adapter.sv 
+# -- Compiling module altera_merlin_burst_adapter
+# 
+# Top level modules:
+# 	altera_merlin_burst_adapter
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_burst_adapter_uncmpr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_burst_adapter_uncmpr.sv 
+# -- Compiling module altera_merlin_burst_adapter_uncompressed_only
+# 
+# Top level modules:
+# 	altera_merlin_burst_adapter_uncompressed_only
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_burst_uncompressor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_burst_uncompressor.sv 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_master_agent.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_master_agent.sv 
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_master_translator.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_master_translator.sv 
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_slave_agent.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_slave_agent.sv 
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_slave_translator.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_slave_translator.sv 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv 
+# -- Compiling module altera_merlin_traffic_limiter
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(531): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(602): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(603): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(604): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(605): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(606): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(607): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(612): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(614): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(617): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(618): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(644): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(646): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(647): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(648): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(649): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(650): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(655): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(657): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(660): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv(661): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# 
+# Top level modules:
+# 	altera_merlin_traffic_limiter
+# End time: 11:37:45 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 21
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_width_adapter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:45 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_width_adapter.sv 
+# -- Compiling module altera_merlin_width_adapter
+# 
+# Top level modules:
+# 	altera_merlin_width_adapter
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_irq_mapper.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_irq_mapper.sv 
+# -- Compiling module system_irq_mapper
+# 
+# Top level modules:
+# 	system_irq_mapper
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_avalon_st_adapter_001_error_adapter_0.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_avalon_st_adapter_001_error_adapter_0.sv 
+# -- Compiling module system_mm_interconnect_0_avalon_st_adapter_001_error_adapter_0
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_avalon_st_adapter_001_error_adapter_0
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv 
+# -- Compiling module system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_cmd_demux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_cmd_demux.sv 
+# -- Compiling module system_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_cmd_demux
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_cmd_demux_001.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_cmd_demux_001.sv 
+# -- Compiling module system_mm_interconnect_0_cmd_demux_001
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_cmd_demux_001
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_cmd_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_cmd_mux.sv 
+# -- Compiling module system_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_cmd_mux
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_cmd_mux_003.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_cmd_mux_003.sv 
+# -- Compiling module system_mm_interconnect_0_cmd_mux_003
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_cmd_mux_003
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router.sv 
+# -- Compiling module system_mm_interconnect_0_router_default_decode
+# -- Compiling module system_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_router
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router_001.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router_001.sv 
+# -- Compiling module system_mm_interconnect_0_router_001_default_decode
+# -- Compiling module system_mm_interconnect_0_router_001
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_router_001
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router_002.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router_002.sv 
+# -- Compiling module system_mm_interconnect_0_router_002_default_decode
+# -- Compiling module system_mm_interconnect_0_router_002
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_router_002
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router_003.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router_003.sv 
+# -- Compiling module system_mm_interconnect_0_router_003_default_decode
+# -- Compiling module system_mm_interconnect_0_router_003
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_router_003
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router_005.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router_005.sv 
+# -- Compiling module system_mm_interconnect_0_router_005_default_decode
+# -- Compiling module system_mm_interconnect_0_router_005
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_router_005
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_rsp_demux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_rsp_demux.sv 
+# -- Compiling module system_mm_interconnect_0_rsp_demux
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_rsp_demux
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_rsp_demux_003.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_rsp_demux_003.sv 
+# -- Compiling module system_mm_interconnect_0_rsp_demux_003
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_rsp_demux_003
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_rsp_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_rsp_mux.sv 
+# -- Compiling module system_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_rsp_mux
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_rsp_mux_001.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vlog -reportprogress 300 -sv -work system "+incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules" /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_rsp_mux_001.sv 
+# -- Compiling module system_mm_interconnect_0_rsp_mux_001
+# 
+# Top level modules:
+# 	system_mm_interconnect_0_rsp_mux_001
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/SoPC.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vcom -reportprogress 300 -93 -work work /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/SoPC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SoPC
+# -- Compiling architecture projeto of SoPC
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/unidade_aritmetica.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vcom -reportprogress 300 -93 -work work /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/unidade_aritmetica.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity unidade_aritmetica
+# -- Compiling architecture com_compartilhamento of unidade_aritmetica
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/bcd2ssd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vcom -reportprogress 300 -93 -work work /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/bcd2ssd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bcd2ssd
+# -- Compiling architecture conversor of bcd2ssd
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/bin2bcd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vcom -reportprogress 300 -93 -work work /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/bin2bcd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity bin2bcd
+# -- Compiling architecture behaviour of bin2bcd
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/datapath.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vcom -reportprogress 300 -93 -work work /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity datapath
+# -- Compiling architecture projeto of datapath
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/FSM.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vcom -reportprogress 300 -93 -work work /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/FSM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FSM
+# -- Compiling architecture ifsc of FSM
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/system/synthesis/system.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vcom -reportprogress 300 -93 -work work /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/system/synthesis/system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity system
+# -- Compiling architecture rtl of system
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/topo.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vcom -reportprogress 300 -93 -work work /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/topo.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity topo
+# -- Compiling architecture system of topo
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:46 on Dec 12,2022
+# vcom -reportprogress 300 -93 -work work /home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/registrador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity registrador
+# -- Compiling architecture v1 of registrador
+# End time: 11:37:46 on Dec 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 

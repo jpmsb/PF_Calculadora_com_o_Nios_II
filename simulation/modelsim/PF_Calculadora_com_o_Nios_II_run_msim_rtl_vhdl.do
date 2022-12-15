@@ -1,0 +1,69 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlib system
+vmap system system
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_reset_controller.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_reset_synchronizer.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_up_character_lcd_communication.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_up_character_lcd_initialization.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_entrada_pio.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_jtag_uart.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_lcd_16x2.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_led_pio.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_avalon_st_adapter.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_avalon_st_adapter_001.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_debug_slave_sysclk.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_debug_slave_tck.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_debug_slave_wrapper.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_mult_cell.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_nios2_0_cpu_test_bench.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_onchip_mem.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_sys_clk_timer.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_sysid.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/system.v}
+vlog -vlog01compat -work work +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/altera_mult_add_vkp2.v}
+vlog -vlog01compat -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_avalon_sc_fifo.v}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_arbitrator.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_burst_adapter.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_burst_adapter_uncmpr.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_burst_uncompressor.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_master_agent.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_master_translator.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_slave_agent.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_slave_translator.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_traffic_limiter.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/altera_merlin_width_adapter.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_irq_mapper.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_avalon_st_adapter_001_error_adapter_0.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_cmd_demux.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_cmd_demux_001.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_cmd_mux.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_cmd_mux_003.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router_001.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router_002.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router_003.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_router_005.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_rsp_demux.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_rsp_demux_003.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_rsp_mux.sv}
+vlog -sv -work system +incdir+/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/db/ip/system/submodules/system_mm_interconnect_0_rsp_mux_001.sv}
+vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/SoPC.vhd}
+vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/unidade_aritmetica.vhd}
+vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/bcd2ssd.vhd}
+vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/bin2bcd.vhd}
+vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/datapath.vhd}
+vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/FSM.vhd}
+vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/system/synthesis/system.vhd}
+vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/topo.vhd}
+vcom -93 -work work {/home/joaopedro/Documentos/DLP29007/NIOS/PF_Calculadora_com_o_Nios_II/registrador.vhd}
+
