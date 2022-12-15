@@ -209,6 +209,7 @@ int main(void) {
 			   IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE,operando2);
 
 			   sprintf(conta, "%d %s %d", operando1, operador, operando2);
+			   limpa_linha(dispositivo_LCD, 1);
 			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 1);
 			   alt_up_character_lcd_string(dispositivo_LCD, conta);
 
