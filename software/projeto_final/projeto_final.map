@@ -35,7 +35,7 @@ Archive member included to satisfy reference by file (symbol)
 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
                               ../projeto_final_bsp//libhal_bsp.a(alt_sys_init.o) (alt_avalon_timer_sc_init)
 ../projeto_final_bsp//libhal_bsp.a(altera_up_avalon_character_lcd.o)
-                              ../projeto_final_bsp//libhal_bsp.a(alt_sys_init.o) (alt_up_character_lcd_init)
+                              obj/default/projeto_final.o (alt_up_character_lcd_init)
 ../projeto_final_bsp//libhal_bsp.a(alt_busy_sleep.o)
                               ../projeto_final_bsp//libhal_bsp.a(alt_usleep.o) (alt_busy_sleep)
 ../projeto_final_bsp//libhal_bsp.a(alt_close.o)
@@ -189,7 +189,7 @@ LOAD /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nio
                 0x0000000000010238                PROVIDE (__ram_exceptions_end = ABSOLUTE (.))
                 0x0000000000010020                PROVIDE (__flash_exceptions_start = LOADADDR (.exceptions))
 
-.text           0x0000000000010238     0x332c
+.text           0x0000000000010238     0x3334
                 [!provide]                        PROVIDE (stext = ABSOLUTE (.))
  *(.interp)
  *(.hash)
@@ -236,7 +236,7 @@ LOAD /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nio
  *(.text .stub .text.* .gnu.linkonce.t.*)
  .text          0x0000000000010238       0x4c ../projeto_final_bsp//obj/HAL/src/crt0.o
                 0x0000000000010238                _start
- .text          0x0000000000010284      0x8b4 obj/default/projeto_final.o
+ .text          0x0000000000010284      0x8bc obj/default/projeto_final.o
                 0x0000000000010284                calcula
                 0x0000000000010324                limpa_lcd
                 0x00000000000103b8                limpa_linha
@@ -247,158 +247,158 @@ LOAD /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nio
                 0x0000000000010524                traduz_operador
                 0x00000000000105e0                traduz_operador_extenso
                 0x000000000001069c                main
- .text          0x0000000000010b38        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-sprintf.o)
+ .text          0x0000000000010b40        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-sprintf.o)
  .text._sprintf_r
-                0x0000000000010b38       0x60 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-sprintf.o)
-                0x0000000000010b38                _sprintf_r
- .text.sprintf  0x0000000000010b98       0x70 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-sprintf.o)
-                0x0000000000010b98                sprintf
- .text          0x0000000000010c08        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-strlen.o)
- .text.strlen   0x0000000000010c08       0x1c /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-strlen.o)
-                0x0000000000010c08                strlen
- .text          0x0000000000010c24        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-svfprintf.o)
+                0x0000000000010b40       0x60 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-sprintf.o)
+                0x0000000000010b40                _sprintf_r
+ .text.sprintf  0x0000000000010ba0       0x70 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-sprintf.o)
+                0x0000000000010ba0                sprintf
+ .text          0x0000000000010c10        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-strlen.o)
+ .text.strlen   0x0000000000010c10       0x1c /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-strlen.o)
+                0x0000000000010c10                strlen
+ .text          0x0000000000010c2c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-svfprintf.o)
  .text.print_repeat
-                0x0000000000010c24       0x6c /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-svfprintf.o)
+                0x0000000000010c2c       0x6c /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-svfprintf.o)
  .text.___svfprintf_internal_r
-                0x0000000000010c90      0x4ec /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-svfprintf.o)
-                0x0000000000010c90                ___svfprintf_internal_r
+                0x0000000000010c98      0x4ec /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-svfprintf.o)
+                0x0000000000010c98                ___svfprintf_internal_r
  .text.__vfprintf_internal_unused
-                0x000000000001117c       0x18 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-svfprintf.o)
-                0x000000000001117c                __vfprintf_internal_unused
- .text          0x0000000000011194        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_str.o)
+                0x0000000000011184       0x18 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-svfprintf.o)
+                0x0000000000011184                __vfprintf_internal_unused
+ .text          0x000000000001119c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_str.o)
  .text.__sfvwrite_small_str
-                0x0000000000011194       0x98 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_str.o)
-                0x0000000000011194                __sfvwrite_small_str
- .text          0x000000000001122c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-impure.o)
- .text          0x000000000001122c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memmove.o)
- .text.memmove  0x000000000001122c       0x60 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memmove.o)
-                0x000000000001122c                memmove
- .text          0x000000000001128c      0x1b4 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/libgcc.a(lib2-divmod.o)
-                0x000000000001128c                __divsi3
-                0x000000000001130c                __modsi3
-                0x0000000000011380                __udivsi3
-                0x00000000000113e4                __umodsi3
- .text          0x0000000000011440       0xec ../projeto_final_bsp//libhal_bsp.a(alt_load.o)
-                0x00000000000114a8                alt_load
- .text          0x000000000001152c       0x6c ../projeto_final_bsp//libhal_bsp.a(alt_main.o)
-                0x000000000001152c                alt_main
- .text          0x0000000000011598      0x22c ../projeto_final_bsp//libhal_bsp.a(alt_printf.o)
-                0x0000000000011598                alt_printf
- .text          0x00000000000117c4       0x30 ../projeto_final_bsp//libhal_bsp.a(alt_putchar.o)
-                0x00000000000117c4                alt_putchar
- .text          0x00000000000117f4       0x30 ../projeto_final_bsp//libhal_bsp.a(alt_usleep.o)
-                0x00000000000117f4                usleep
- .text          0x0000000000011824       0xd8 ../projeto_final_bsp//libhal_bsp.a(alt_sys_init.o)
-                0x0000000000011858                alt_irq_init
-                0x0000000000011894                alt_sys_init
- .text          0x00000000000118fc       0xc0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
-                0x00000000000118fc                altera_avalon_jtag_uart_read_fd
-                0x000000000001195c                altera_avalon_jtag_uart_write_fd
- .text          0x00000000000119bc       0xec ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
-                0x00000000000119bc                altera_avalon_jtag_uart_read
- .text          0x0000000000011aa8       0x94 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
-                0x0000000000011aa8                altera_avalon_jtag_uart_write
- .text          0x0000000000011b3c      0x100 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
-                0x0000000000011bb8                alt_avalon_timer_sc_init
- .text          0x0000000000011c3c      0x4fc ../projeto_final_bsp//libhal_bsp.a(altera_up_avalon_character_lcd.o)
-                0x0000000000011c3c                get_DDRAM_addr
-                0x0000000000011cb0                alt_up_character_lcd_send_cmd
-                0x0000000000011cf0                alt_up_character_lcd_init
-                0x0000000000011d28                alt_up_character_lcd_open_dev
-                0x0000000000011d64                alt_up_character_lcd_write
-                0x0000000000011de4                alt_up_character_lcd_string
-                0x0000000000011e60                alt_up_character_lcd_write_fd
-                0x0000000000011eb0                alt_up_character_lcd_set_cursor_pos
-                0x0000000000011f24                alt_up_character_lcd_shift_cursor
-                0x0000000000011fb0                alt_up_character_lcd_shift_display
-                0x000000000001203c                alt_up_character_lcd_erase_pos
-                0x00000000000120c8                alt_up_character_lcd_cursor_off
-                0x0000000000012100                alt_up_character_lcd_cursor_blink_on
- .text          0x0000000000012138      0x158 ../projeto_final_bsp//libhal_bsp.a(alt_busy_sleep.o)
-                0x0000000000012138                alt_busy_sleep
- .text          0x0000000000012290      0x10c ../projeto_final_bsp//libhal_bsp.a(alt_close.o)
-                0x00000000000122cc                close
- .text          0x000000000001239c       0x4c ../projeto_final_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
-                0x000000000001239c                alt_dcache_flush_all
- .text          0x00000000000123e8       0x2c ../projeto_final_bsp//libhal_bsp.a(alt_dev.o)
- .text          0x0000000000012414       0xe4 ../projeto_final_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
-                0x0000000000012450                alt_dev_llist_insert
- .text          0x00000000000124f8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_errno.o)
- .text          0x00000000000124f8       0x90 ../projeto_final_bsp//libhal_bsp.a(alt_find_dev.o)
-                0x00000000000124f8                alt_find_dev
- .text          0x0000000000012588       0x34 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush_all.o)
-                0x0000000000012588                alt_icache_flush_all
- .text          0x00000000000125bc      0x1b0 ../projeto_final_bsp//libhal_bsp.a(alt_iic.o)
-                0x00000000000125bc                alt_ic_isr_register
-                0x000000000001260c                alt_ic_irq_enable
-                0x0000000000012694                alt_ic_irq_disable
-                0x0000000000012720                alt_ic_irq_enabled
- .text          0x000000000001276c       0xe8 ../projeto_final_bsp//libhal_bsp.a(alt_iic_isr_register.o)
-                0x000000000001276c                alt_iic_isr_register
- .text          0x0000000000012854      0x12c ../projeto_final_bsp//libhal_bsp.a(alt_io_redirect.o)
-                0x0000000000012904                alt_io_redirect
- .text          0x0000000000012980        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_entry.o)
- .text          0x0000000000012980        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_handler.o)
- .text          0x0000000000012980        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_vars.o)
- .text          0x0000000000012980      0x248 ../projeto_final_bsp//libhal_bsp.a(alt_open.o)
-                0x0000000000012a74                open
- .text          0x0000000000012bc8       0x58 ../projeto_final_bsp//libhal_bsp.a(alt_release_fd.o)
-                0x0000000000012bc8                alt_release_fd
- .text          0x0000000000012c20      0x1ac ../projeto_final_bsp//libhal_bsp.a(alt_tick.o)
-                0x0000000000012c20                alt_alarm_stop
-                0x0000000000012cc4                alt_tick
- .text          0x0000000000012dcc       0x24 ../projeto_final_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
-                0x0000000000012dcc                altera_nios2_gen2_irq_init
- .text          0x0000000000012df0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_exception_entry.o)
- .text          0x0000000000012df0      0x108 ../projeto_final_bsp//libhal_bsp.a(alt_find_file.o)
-                0x0000000000012df0                alt_find_file
- .text          0x0000000000012ef8       0xa0 ../projeto_final_bsp//libhal_bsp.a(alt_get_fd.o)
-                0x0000000000012ef8                alt_get_fd
- .text          0x0000000000012f98       0x90 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush.o)
-                0x0000000000012f98                alt_icache_flush
- .text          0x0000000000013028       0x98 ../projeto_final_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
-                0x0000000000013028                alt_exception_cause_generated_bad_addr
- .text          0x00000000000130c0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-exit.o)
- .text.exit     0x00000000000130c0       0x20 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-exit.o)
-                0x00000000000130c0                exit
- .text          0x00000000000130e0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-int_errno.o)
- .text          0x00000000000130e0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memcmp.o)
- .text.memcmp   0x00000000000130e0       0x30 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memcmp.o)
-                0x00000000000130e0                memcmp
- .text          0x0000000000013110        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putchar.o)
+                0x000000000001119c       0x98 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_str.o)
+                0x000000000001119c                __sfvwrite_small_str
+ .text          0x0000000000011234        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-impure.o)
+ .text          0x0000000000011234        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memmove.o)
+ .text.memmove  0x0000000000011234       0x60 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memmove.o)
+                0x0000000000011234                memmove
+ .text          0x0000000000011294      0x1b4 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/libgcc.a(lib2-divmod.o)
+                0x0000000000011294                __divsi3
+                0x0000000000011314                __modsi3
+                0x0000000000011388                __udivsi3
+                0x00000000000113ec                __umodsi3
+ .text          0x0000000000011448       0xec ../projeto_final_bsp//libhal_bsp.a(alt_load.o)
+                0x00000000000114b0                alt_load
+ .text          0x0000000000011534       0x6c ../projeto_final_bsp//libhal_bsp.a(alt_main.o)
+                0x0000000000011534                alt_main
+ .text          0x00000000000115a0      0x22c ../projeto_final_bsp//libhal_bsp.a(alt_printf.o)
+                0x00000000000115a0                alt_printf
+ .text          0x00000000000117cc       0x30 ../projeto_final_bsp//libhal_bsp.a(alt_putchar.o)
+                0x00000000000117cc                alt_putchar
+ .text          0x00000000000117fc       0x30 ../projeto_final_bsp//libhal_bsp.a(alt_usleep.o)
+                0x00000000000117fc                usleep
+ .text          0x000000000001182c       0xd8 ../projeto_final_bsp//libhal_bsp.a(alt_sys_init.o)
+                0x0000000000011860                alt_irq_init
+                0x000000000001189c                alt_sys_init
+ .text          0x0000000000011904       0xc0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x0000000000011904                altera_avalon_jtag_uart_read_fd
+                0x0000000000011964                altera_avalon_jtag_uart_write_fd
+ .text          0x00000000000119c4       0xec ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x00000000000119c4                altera_avalon_jtag_uart_read
+ .text          0x0000000000011ab0       0x94 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x0000000000011ab0                altera_avalon_jtag_uart_write
+ .text          0x0000000000011b44      0x100 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+                0x0000000000011bc0                alt_avalon_timer_sc_init
+ .text          0x0000000000011c44      0x4fc ../projeto_final_bsp//libhal_bsp.a(altera_up_avalon_character_lcd.o)
+                0x0000000000011c44                get_DDRAM_addr
+                0x0000000000011cb8                alt_up_character_lcd_send_cmd
+                0x0000000000011cf8                alt_up_character_lcd_init
+                0x0000000000011d30                alt_up_character_lcd_open_dev
+                0x0000000000011d6c                alt_up_character_lcd_write
+                0x0000000000011dec                alt_up_character_lcd_string
+                0x0000000000011e68                alt_up_character_lcd_write_fd
+                0x0000000000011eb8                alt_up_character_lcd_set_cursor_pos
+                0x0000000000011f2c                alt_up_character_lcd_shift_cursor
+                0x0000000000011fb8                alt_up_character_lcd_shift_display
+                0x0000000000012044                alt_up_character_lcd_erase_pos
+                0x00000000000120d0                alt_up_character_lcd_cursor_off
+                0x0000000000012108                alt_up_character_lcd_cursor_blink_on
+ .text          0x0000000000012140      0x158 ../projeto_final_bsp//libhal_bsp.a(alt_busy_sleep.o)
+                0x0000000000012140                alt_busy_sleep
+ .text          0x0000000000012298      0x10c ../projeto_final_bsp//libhal_bsp.a(alt_close.o)
+                0x00000000000122d4                close
+ .text          0x00000000000123a4       0x4c ../projeto_final_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00000000000123a4                alt_dcache_flush_all
+ .text          0x00000000000123f0       0x2c ../projeto_final_bsp//libhal_bsp.a(alt_dev.o)
+ .text          0x000000000001241c       0xe4 ../projeto_final_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+                0x0000000000012458                alt_dev_llist_insert
+ .text          0x0000000000012500        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_errno.o)
+ .text          0x0000000000012500       0x90 ../projeto_final_bsp//libhal_bsp.a(alt_find_dev.o)
+                0x0000000000012500                alt_find_dev
+ .text          0x0000000000012590       0x34 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+                0x0000000000012590                alt_icache_flush_all
+ .text          0x00000000000125c4      0x1b0 ../projeto_final_bsp//libhal_bsp.a(alt_iic.o)
+                0x00000000000125c4                alt_ic_isr_register
+                0x0000000000012614                alt_ic_irq_enable
+                0x000000000001269c                alt_ic_irq_disable
+                0x0000000000012728                alt_ic_irq_enabled
+ .text          0x0000000000012774       0xe8 ../projeto_final_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+                0x0000000000012774                alt_iic_isr_register
+ .text          0x000000000001285c      0x12c ../projeto_final_bsp//libhal_bsp.a(alt_io_redirect.o)
+                0x000000000001290c                alt_io_redirect
+ .text          0x0000000000012988        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .text          0x0000000000012988        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .text          0x0000000000012988        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .text          0x0000000000012988      0x248 ../projeto_final_bsp//libhal_bsp.a(alt_open.o)
+                0x0000000000012a7c                open
+ .text          0x0000000000012bd0       0x58 ../projeto_final_bsp//libhal_bsp.a(alt_release_fd.o)
+                0x0000000000012bd0                alt_release_fd
+ .text          0x0000000000012c28      0x1ac ../projeto_final_bsp//libhal_bsp.a(alt_tick.o)
+                0x0000000000012c28                alt_alarm_stop
+                0x0000000000012ccc                alt_tick
+ .text          0x0000000000012dd4       0x24 ../projeto_final_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x0000000000012dd4                altera_nios2_gen2_irq_init
+ .text          0x0000000000012df8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .text          0x0000000000012df8      0x108 ../projeto_final_bsp//libhal_bsp.a(alt_find_file.o)
+                0x0000000000012df8                alt_find_file
+ .text          0x0000000000012f00       0xa0 ../projeto_final_bsp//libhal_bsp.a(alt_get_fd.o)
+                0x0000000000012f00                alt_get_fd
+ .text          0x0000000000012fa0       0x90 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush.o)
+                0x0000000000012fa0                alt_icache_flush
+ .text          0x0000000000013030       0x98 ../projeto_final_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000000013030                alt_exception_cause_generated_bad_addr
+ .text          0x00000000000130c8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-exit.o)
+ .text.exit     0x00000000000130c8       0x20 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-exit.o)
+                0x00000000000130c8                exit
+ .text          0x00000000000130e8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-int_errno.o)
+ .text          0x00000000000130e8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memcmp.o)
+ .text.memcmp   0x00000000000130e8       0x30 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memcmp.o)
+                0x00000000000130e8                memcmp
+ .text          0x0000000000013118        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putchar.o)
  .text._putchar_r
-                0x0000000000013110        0x8 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putchar.o)
-                0x0000000000013110                _putchar_r
- .text.putchar  0x0000000000013118       0x18 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putchar.o)
-                0x0000000000013118                putchar
- .text          0x0000000000013130        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-__call_atexit.o)
+                0x0000000000013118        0x8 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putchar.o)
+                0x0000000000013118                _putchar_r
+ .text.putchar  0x0000000000013120       0x18 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putchar.o)
+                0x0000000000013120                putchar
+ .text          0x0000000000013138        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-__call_atexit.o)
  .text.__call_exitprocs
-                0x0000000000013130      0x12c /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-__call_atexit.o)
-                0x0000000000013130                __call_exitprocs
- .text          0x000000000001325c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putc.o)
- .text.putc     0x000000000001325c       0x50 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putc.o)
-                0x000000000001325c                putc
- .text._putc_r  0x00000000000132ac       0x54 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putc.o)
-                0x00000000000132ac                _putc_r
- .text          0x0000000000013300        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_dev.o)
+                0x0000000000013138      0x12c /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-__call_atexit.o)
+                0x0000000000013138                __call_exitprocs
+ .text          0x0000000000013264        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putc.o)
+ .text.putc     0x0000000000013264       0x50 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putc.o)
+                0x0000000000013264                putc
+ .text._putc_r  0x00000000000132b4       0x54 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putc.o)
+                0x00000000000132b4                _putc_r
+ .text          0x0000000000013308        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_dev.o)
  .text.__sfvwrite_small_dev
-                0x0000000000013300       0xa8 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_dev.o)
-                0x0000000000013300                __sfvwrite_small_dev
- .text          0x00000000000133a8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-writer.o)
+                0x0000000000013308       0xa8 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_dev.o)
+                0x0000000000013308                __sfvwrite_small_dev
+ .text          0x00000000000133b0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-writer.o)
  .text._write_r
-                0x00000000000133a8       0x50 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-writer.o)
-                0x00000000000133a8                _write_r
- .text          0x00000000000133f8       0x38 ../projeto_final_bsp//libhal_bsp.a(alt_exit.o)
-                0x00000000000133f8                _exit
- .text          0x0000000000013430      0x134 ../projeto_final_bsp//libhal_bsp.a(alt_write.o)
-                0x000000000001346c                write
+                0x00000000000133b0       0x50 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-writer.o)
+                0x00000000000133b0                _write_r
+ .text          0x0000000000013400       0x38 ../projeto_final_bsp//libhal_bsp.a(alt_exit.o)
+                0x0000000000013400                _exit
+ .text          0x0000000000013438      0x134 ../projeto_final_bsp//libhal_bsp.a(alt_write.o)
+                0x0000000000013474                write
  *(.gnu.warning.*)
  *(.fini)
                 [!provide]                        PROVIDE (__etext = ABSOLUTE (.))
                 [!provide]                        PROVIDE (_etext = ABSOLUTE (.))
                 [!provide]                        PROVIDE (etext = ABSOLUTE (.))
  *(.eh_frame_hdr)
-                0x0000000000013564                . = ALIGN (0x4)
+                0x000000000001356c                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__preinit_array_start = ABSOLUTE (.))
  *(.preinit_array)
                 [!provide]                        PROVIDE (__preinit_array_end = ABSOLUTE (.))
@@ -420,207 +420,207 @@ LOAD /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nio
  *(SORT_BY_NAME(.dtors.*))
                 [!provide]                        PROVIDE (__DTOR_END__ = ABSOLUTE (.))
  *(.jcr)
-                0x0000000000013564                . = ALIGN (0x4)
+                0x000000000001356c                . = ALIGN (0x4)
 
-.rodata         0x0000000000013564      0x144
-                0x0000000000013564                PROVIDE (__ram_rodata_start = ABSOLUTE (.))
-                0x0000000000013564                . = ALIGN (0x4)
+.rodata         0x000000000001356c      0x144
+                0x000000000001356c                PROVIDE (__ram_rodata_start = ABSOLUTE (.))
+                0x000000000001356c                . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0000000000013564      0x107 obj/default/projeto_final.o
- *fill*         0x000000000001366b        0x1 
- .rodata        0x000000000001366c        0xf ../projeto_final_bsp//libhal_bsp.a(alt_main.o)
- *fill*         0x000000000001367b        0x1 
- .rodata        0x000000000001367c       0x1e ../projeto_final_bsp//libhal_bsp.a(alt_sys_init.o)
- *fill*         0x000000000001369a        0x2 
- .rodata        0x000000000001369c        0xa ../projeto_final_bsp//libhal_bsp.a(alt_dev.o)
+ .rodata        0x000000000001356c      0x107 obj/default/projeto_final.o
+ *fill*         0x0000000000013673        0x1 
+ .rodata        0x0000000000013674        0xf ../projeto_final_bsp//libhal_bsp.a(alt_main.o)
+ *fill*         0x0000000000013683        0x1 
+ .rodata        0x0000000000013684       0x1e ../projeto_final_bsp//libhal_bsp.a(alt_sys_init.o)
+ *fill*         0x00000000000136a2        0x2 
+ .rodata        0x00000000000136a4        0xa ../projeto_final_bsp//libhal_bsp.a(alt_dev.o)
  *(.rodata1)
-                0x00000000000136a8                . = ALIGN (0x4)
- *fill*         0x00000000000136a6        0x2 
-                0x00000000000136a8                PROVIDE (__ram_rodata_end = ABSOLUTE (.))
-                0x0000000000013564                PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
+                0x00000000000136b0                . = ALIGN (0x4)
+ *fill*         0x00000000000136ae        0x2 
+                0x00000000000136b0                PROVIDE (__ram_rodata_end = ABSOLUTE (.))
+                0x000000000001356c                PROVIDE (__flash_rodata_start = LOADADDR (.rodata))
 
-.rwdata         0x00000000000136a8      0x310 load address 0x00000000000139b8
-                0x00000000000136a8                PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
-                0x00000000000136a8                . = ALIGN (0x4)
+.rwdata         0x00000000000136b0      0x310 load address 0x00000000000139c0
+                0x00000000000136b0                PROVIDE (__ram_rwdata_start = ABSOLUTE (.))
+                0x00000000000136b0                . = ALIGN (0x4)
  *(.got.plt)
  *(.got)
  *(.data1)
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x00000000000136a8        0x0 ../projeto_final_bsp//obj/HAL/src/crt0.o
- .data          0x00000000000136a8        0x0 obj/default/projeto_final.o
- .data          0x00000000000136a8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-sprintf.o)
- .data          0x00000000000136a8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-strlen.o)
- .data          0x00000000000136a8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-svfprintf.o)
- .data          0x00000000000136a8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_str.o)
- .data          0x00000000000136a8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-impure.o)
+ .data          0x00000000000136b0        0x0 ../projeto_final_bsp//obj/HAL/src/crt0.o
+ .data          0x00000000000136b0        0x0 obj/default/projeto_final.o
+ .data          0x00000000000136b0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-sprintf.o)
+ .data          0x00000000000136b0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-strlen.o)
+ .data          0x00000000000136b0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-svfprintf.o)
+ .data          0x00000000000136b0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_str.o)
+ .data          0x00000000000136b0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-impure.o)
  .data.impure_data
-                0x00000000000136a8       0xe4 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-impure.o)
- .data          0x000000000001378c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memmove.o)
- .data          0x000000000001378c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/libgcc.a(lib2-divmod.o)
- .data          0x000000000001378c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_load.o)
- .data          0x000000000001378c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_main.o)
- .data          0x000000000001378c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_printf.o)
- .data          0x000000000001378c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_putchar.o)
- .data          0x000000000001378c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_usleep.o)
- .data          0x000000000001378c       0x58 ../projeto_final_bsp//libhal_bsp.a(alt_sys_init.o)
- .data          0x00000000000137e4        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
- .data          0x00000000000137e4        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
- .data          0x00000000000137e4        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .data          0x00000000000137e4        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
- .data          0x00000000000137e4        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_up_avalon_character_lcd.o)
- .data          0x00000000000137e4        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_busy_sleep.o)
- .data          0x00000000000137e4        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_close.o)
- .data          0x00000000000137e4        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
- .data          0x00000000000137e4      0x1a8 ../projeto_final_bsp//libhal_bsp.a(alt_dev.o)
-                0x00000000000137e4                alt_dev_null
-                0x000000000001380c                alt_fd_list
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_errno.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_find_dev.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush_all.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_iic.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_iic_isr_register.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_io_redirect.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_entry.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_handler.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_vars.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_open.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_release_fd.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_tick.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_exception_entry.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_find_file.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_get_fd.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
- .data          0x000000000001398c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-exit.o)
- .data          0x000000000001398c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-int_errno.o)
- .data          0x000000000001398c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memcmp.o)
- .data          0x000000000001398c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putchar.o)
- .data          0x000000000001398c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-__call_atexit.o)
- .data          0x000000000001398c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putc.o)
- .data          0x000000000001398c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_dev.o)
- .data          0x000000000001398c        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-writer.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_exit.o)
- .data          0x000000000001398c        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_write.o)
-                0x000000000001b98c                _gp = ABSOLUTE ((. + 0x8000))
+                0x00000000000136b0       0xe4 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-impure.o)
+ .data          0x0000000000013794        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memmove.o)
+ .data          0x0000000000013794        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/libgcc.a(lib2-divmod.o)
+ .data          0x0000000000013794        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_load.o)
+ .data          0x0000000000013794        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_main.o)
+ .data          0x0000000000013794        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_printf.o)
+ .data          0x0000000000013794        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_putchar.o)
+ .data          0x0000000000013794        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_usleep.o)
+ .data          0x0000000000013794       0x58 ../projeto_final_bsp//libhal_bsp.a(alt_sys_init.o)
+ .data          0x00000000000137ec        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x00000000000137ec        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x00000000000137ec        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x00000000000137ec        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+ .data          0x00000000000137ec        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_up_avalon_character_lcd.o)
+ .data          0x00000000000137ec        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_busy_sleep.o)
+ .data          0x00000000000137ec        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_close.o)
+ .data          0x00000000000137ec        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00000000000137ec      0x1a8 ../projeto_final_bsp//libhal_bsp.a(alt_dev.o)
+                0x00000000000137ec                alt_dev_null
+                0x0000000000013814                alt_fd_list
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_errno.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_find_dev.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_iic.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_open.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_release_fd.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_tick.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_find_file.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_get_fd.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+ .data          0x0000000000013994        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-exit.o)
+ .data          0x0000000000013994        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-int_errno.o)
+ .data          0x0000000000013994        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memcmp.o)
+ .data          0x0000000000013994        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putchar.o)
+ .data          0x0000000000013994        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-__call_atexit.o)
+ .data          0x0000000000013994        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putc.o)
+ .data          0x0000000000013994        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .data          0x0000000000013994        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-writer.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_exit.o)
+ .data          0x0000000000013994        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_write.o)
+                0x000000000001b994                _gp = ABSOLUTE ((. + 0x8000))
                 [!provide]                        PROVIDE (gp = _gp)
  *(.rwdata .rwdata.*)
  *(.sdata .sdata.* .gnu.linkonce.s.*)
  .sdata._global_impure_ptr
-                0x000000000001398c        0x4 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-impure.o)
-                0x000000000001398c                _global_impure_ptr
+                0x0000000000013994        0x4 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-impure.o)
+                0x0000000000013994                _global_impure_ptr
  .sdata._impure_ptr
-                0x0000000000013990        0x4 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-impure.o)
-                0x0000000000013990                _impure_ptr
- .sdata         0x0000000000013994       0x14 ../projeto_final_bsp//libhal_bsp.a(alt_dev.o)
-                0x0000000000013994                alt_fs_list
-                0x000000000001399c                alt_dev_list
-                0x00000000000139a4                alt_max_fd
- .sdata         0x00000000000139a8        0x4 ../projeto_final_bsp//libhal_bsp.a(alt_errno.o)
-                0x00000000000139a8                alt_errno
- .sdata         0x00000000000139ac        0x4 ../projeto_final_bsp//libhal_bsp.a(alt_irq_vars.o)
-                0x00000000000139ac                alt_priority_mask
- .sdata         0x00000000000139b0        0x8 ../projeto_final_bsp//libhal_bsp.a(alt_tick.o)
-                0x00000000000139b0                alt_alarm_list
+                0x0000000000013998        0x4 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-impure.o)
+                0x0000000000013998                _impure_ptr
+ .sdata         0x000000000001399c       0x14 ../projeto_final_bsp//libhal_bsp.a(alt_dev.o)
+                0x000000000001399c                alt_fs_list
+                0x00000000000139a4                alt_dev_list
+                0x00000000000139ac                alt_max_fd
+ .sdata         0x00000000000139b0        0x4 ../projeto_final_bsp//libhal_bsp.a(alt_errno.o)
+                0x00000000000139b0                alt_errno
+ .sdata         0x00000000000139b4        0x4 ../projeto_final_bsp//libhal_bsp.a(alt_irq_vars.o)
+                0x00000000000139b4                alt_priority_mask
+ .sdata         0x00000000000139b8        0x8 ../projeto_final_bsp//libhal_bsp.a(alt_tick.o)
+                0x00000000000139b8                alt_alarm_list
  *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
-                0x00000000000139b8                . = ALIGN (0x4)
-                0x00000000000139b8                _edata = ABSOLUTE (.)
+                0x00000000000139c0                . = ALIGN (0x4)
+                0x00000000000139c0                _edata = ABSOLUTE (.)
                 [!provide]                        PROVIDE (edata = ABSOLUTE (.))
-                0x00000000000139b8                PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
-                0x00000000000139b8                PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
+                0x00000000000139c0                PROVIDE (__ram_rwdata_end = ABSOLUTE (.))
+                0x00000000000139c0                PROVIDE (__flash_rwdata_start = LOADADDR (.rwdata))
 
-.bss            0x0000000000013cc8      0x120
-                0x0000000000013cc8                __bss_start = ABSOLUTE (.)
+.bss            0x0000000000013cd0      0x120
+                0x0000000000013cd0                __bss_start = ABSOLUTE (.)
                 [!provide]                        PROVIDE (__sbss_start = ABSOLUTE (.))
                 [!provide]                        PROVIDE (___sbss_start = ABSOLUTE (.))
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
- .sbss          0x0000000000013cc8        0xc ../projeto_final_bsp//libhal_bsp.a(alt_main.o)
-                0x0000000000013cc8                alt_argc
-                0x0000000000013ccc                alt_argv
-                0x0000000000013cd0                alt_envp
- .sbss          0x0000000000013cd4        0x4 ../projeto_final_bsp//libhal_bsp.a(alt_irq_vars.o)
-                0x0000000000013cd4                alt_irq_active
- .sbss          0x0000000000013cd8        0x8 ../projeto_final_bsp//libhal_bsp.a(alt_tick.o)
-                0x0000000000013cd8                _alt_tick_rate
-                0x0000000000013cdc                _alt_nticks
- .sbss          0x0000000000013ce0        0x4 ../projeto_final_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
-                0x0000000000013ce0                alt_instruction_exception_handler
- .sbss.errno    0x0000000000013ce4        0x4 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-int_errno.o)
-                0x0000000000013ce4                errno
+ .sbss          0x0000000000013cd0        0xc ../projeto_final_bsp//libhal_bsp.a(alt_main.o)
+                0x0000000000013cd0                alt_argc
+                0x0000000000013cd4                alt_argv
+                0x0000000000013cd8                alt_envp
+ .sbss          0x0000000000013cdc        0x4 ../projeto_final_bsp//libhal_bsp.a(alt_irq_vars.o)
+                0x0000000000013cdc                alt_irq_active
+ .sbss          0x0000000000013ce0        0x8 ../projeto_final_bsp//libhal_bsp.a(alt_tick.o)
+                0x0000000000013ce0                _alt_tick_rate
+                0x0000000000013ce4                _alt_nticks
+ .sbss          0x0000000000013ce8        0x4 ../projeto_final_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000000013ce8                alt_instruction_exception_handler
+ .sbss.errno    0x0000000000013cec        0x4 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-int_errno.o)
+                0x0000000000013cec                errno
  *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
  *(.scommon)
                 [!provide]                        PROVIDE (__sbss_end = ABSOLUTE (.))
                 [!provide]                        PROVIDE (___sbss_end = ABSOLUTE (.))
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//obj/HAL/src/crt0.o
- .bss           0x0000000000013ce8        0x0 obj/default/projeto_final.o
- .bss           0x0000000000013ce8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-sprintf.o)
- .bss           0x0000000000013ce8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-strlen.o)
- .bss           0x0000000000013ce8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-svfprintf.o)
- .bss           0x0000000000013ce8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_str.o)
- .bss           0x0000000000013ce8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-impure.o)
- .bss           0x0000000000013ce8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memmove.o)
- .bss           0x0000000000013ce8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/libgcc.a(lib2-divmod.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_load.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_main.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_printf.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_putchar.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_usleep.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_sys_init.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_up_avalon_character_lcd.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_busy_sleep.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_close.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_dev.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_errno.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_find_dev.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush_all.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_iic.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_iic_isr_register.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_io_redirect.o)
- .bss           0x0000000000013ce8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_entry.o)
- .bss           0x0000000000013ce8      0x100 ../projeto_final_bsp//libhal_bsp.a(alt_irq_handler.o)
-                0x0000000000013ce8                alt_irq
- .bss           0x0000000000013de8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_vars.o)
- .bss           0x0000000000013de8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_open.o)
- .bss           0x0000000000013de8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_release_fd.o)
- .bss           0x0000000000013de8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_tick.o)
- .bss           0x0000000000013de8        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
- .bss           0x0000000000013de8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_exception_entry.o)
- .bss           0x0000000000013de8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_find_file.o)
- .bss           0x0000000000013de8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_get_fd.o)
- .bss           0x0000000000013de8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush.o)
- .bss           0x0000000000013de8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
- .bss           0x0000000000013de8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-exit.o)
- .bss           0x0000000000013de8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-int_errno.o)
- .bss           0x0000000000013de8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memcmp.o)
- .bss           0x0000000000013de8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putchar.o)
- .bss           0x0000000000013de8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-__call_atexit.o)
- .bss           0x0000000000013de8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putc.o)
- .bss           0x0000000000013de8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_dev.o)
- .bss           0x0000000000013de8        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-writer.o)
- .bss           0x0000000000013de8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_exit.o)
- .bss           0x0000000000013de8        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_write.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//obj/HAL/src/crt0.o
+ .bss           0x0000000000013cf0        0x0 obj/default/projeto_final.o
+ .bss           0x0000000000013cf0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-sprintf.o)
+ .bss           0x0000000000013cf0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-strlen.o)
+ .bss           0x0000000000013cf0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-svfprintf.o)
+ .bss           0x0000000000013cf0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_str.o)
+ .bss           0x0000000000013cf0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-impure.o)
+ .bss           0x0000000000013cf0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memmove.o)
+ .bss           0x0000000000013cf0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/libgcc.a(lib2-divmod.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_load.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_main.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_printf.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_putchar.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_usleep.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_up_avalon_character_lcd.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_busy_sleep.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_close.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_dev.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_errno.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_find_dev.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_iic.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x0000000000013cf0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x0000000000013cf0      0x100 ../projeto_final_bsp//libhal_bsp.a(alt_irq_handler.o)
+                0x0000000000013cf0                alt_irq
+ .bss           0x0000000000013df0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x0000000000013df0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_open.o)
+ .bss           0x0000000000013df0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_release_fd.o)
+ .bss           0x0000000000013df0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_tick.o)
+ .bss           0x0000000000013df0        0x0 ../projeto_final_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x0000000000013df0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x0000000000013df0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_find_file.o)
+ .bss           0x0000000000013df0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_get_fd.o)
+ .bss           0x0000000000013df0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush.o)
+ .bss           0x0000000000013df0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+ .bss           0x0000000000013df0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-exit.o)
+ .bss           0x0000000000013df0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-int_errno.o)
+ .bss           0x0000000000013df0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memcmp.o)
+ .bss           0x0000000000013df0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putchar.o)
+ .bss           0x0000000000013df0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000013df0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putc.o)
+ .bss           0x0000000000013df0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .bss           0x0000000000013df0        0x0 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-writer.o)
+ .bss           0x0000000000013df0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_exit.o)
+ .bss           0x0000000000013df0        0x0 ../projeto_final_bsp//libhal_bsp.a(alt_write.o)
  *(COMMON)
-                0x0000000000013de8                . = ALIGN (0x4)
-                0x0000000000013de8                __bss_end = ABSOLUTE (.)
+                0x0000000000013df0                . = ALIGN (0x4)
+                0x0000000000013df0                __bss_end = ABSOLUTE (.)
 
-.onchip_mem     0x0000000000013de8        0x0
+.onchip_mem     0x0000000000013df0        0x0
                 [!provide]                        PROVIDE (_alt_partition_onchip_mem_start = ABSOLUTE (.))
  *(.onchip_mem .onchip_mem. onchip_mem.*)
-                0x0000000000013de8                . = ALIGN (0x4)
+                0x0000000000013df0                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (_alt_partition_onchip_mem_end = ABSOLUTE (.))
-                0x0000000000013de8                _end = ABSOLUTE (.)
-                0x0000000000013de8                end = ABSOLUTE (.)
-                0x0000000000013de8                __alt_stack_base = ABSOLUTE (.)
+                0x0000000000013df0                _end = ABSOLUTE (.)
+                0x0000000000013df0                end = ABSOLUTE (.)
+                0x0000000000013df0                __alt_stack_base = ABSOLUTE (.)
                 [!provide]                        PROVIDE (_alt_partition_onchip_mem_load_addr = LOADADDR (.onchip_mem))
 
 .stab
@@ -931,61 +931,61 @@ LOAD /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nio
  .debug_abbrev  0x0000000000003430       0xac ../projeto_final_bsp//libhal_bsp.a(alt_exit.o)
  .debug_abbrev  0x00000000000034dc      0x149 ../projeto_final_bsp//libhal_bsp.a(alt_write.o)
 
-.debug_line     0x0000000000000000     0x48db
+.debug_line     0x0000000000000000     0x48dc
  *(.debug_line)
  .debug_line    0x0000000000000000       0x72 ../projeto_final_bsp//obj/HAL/src/crt0.o
- .debug_line    0x0000000000000072      0x358 obj/default/projeto_final.o
- .debug_line    0x00000000000003ca      0x291 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-sprintf.o)
- .debug_line    0x000000000000065b      0x17a /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-strlen.o)
- .debug_line    0x00000000000007d5      0x736 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-svfprintf.o)
- .debug_line    0x0000000000000f0b      0x255 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_str.o)
- .debug_line    0x0000000000001160      0x15a /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-impure.o)
- .debug_line    0x00000000000012ba      0x1ac /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memmove.o)
- .debug_line    0x0000000000001466      0x303 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/libgcc.a(lib2-divmod.o)
- .debug_line    0x0000000000001769       0xa6 ../projeto_final_bsp//libhal_bsp.a(alt_load.o)
- .debug_line    0x000000000000180f       0x7d ../projeto_final_bsp//libhal_bsp.a(alt_main.o)
- .debug_line    0x000000000000188c      0x152 ../projeto_final_bsp//libhal_bsp.a(alt_printf.o)
- .debug_line    0x00000000000019de       0x50 ../projeto_final_bsp//libhal_bsp.a(alt_putchar.o)
- .debug_line    0x0000000000001a2e       0xbf ../projeto_final_bsp//libhal_bsp.a(alt_usleep.o)
- .debug_line    0x0000000000001aed      0x14f ../projeto_final_bsp//libhal_bsp.a(alt_sys_init.o)
- .debug_line    0x0000000000001c3c      0x102 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
- .debug_line    0x0000000000001d3e       0xe8 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
- .debug_line    0x0000000000001e26       0xc6 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_line    0x0000000000001eec       0xfd ../projeto_final_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
- .debug_line    0x0000000000001fe9      0x23e ../projeto_final_bsp//libhal_bsp.a(altera_up_avalon_character_lcd.o)
- .debug_line    0x0000000000002227       0xe1 ../projeto_final_bsp//libhal_bsp.a(alt_busy_sleep.o)
- .debug_line    0x0000000000002308      0x1ac ../projeto_final_bsp//libhal_bsp.a(alt_close.o)
- .debug_line    0x00000000000024b4       0x6e ../projeto_final_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_line    0x0000000000002522      0x19f ../projeto_final_bsp//libhal_bsp.a(alt_dev.o)
- .debug_line    0x00000000000026c1      0x106 ../projeto_final_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
- .debug_line    0x00000000000027c7       0x51 ../projeto_final_bsp//libhal_bsp.a(alt_errno.o)
- .debug_line    0x0000000000002818       0xb8 ../projeto_final_bsp//libhal_bsp.a(alt_find_dev.o)
- .debug_line    0x00000000000028d0       0x56 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush_all.o)
- .debug_line    0x0000000000002926      0x123 ../projeto_final_bsp//libhal_bsp.a(alt_iic.o)
- .debug_line    0x0000000000002a49       0xfc ../projeto_final_bsp//libhal_bsp.a(alt_iic_isr_register.o)
- .debug_line    0x0000000000002b45      0x1d2 ../projeto_final_bsp//libhal_bsp.a(alt_io_redirect.o)
- .debug_line    0x0000000000002d17       0x6b ../projeto_final_bsp//libhal_bsp.a(alt_irq_entry.o)
- .debug_line    0x0000000000002d82       0xd4 ../projeto_final_bsp//libhal_bsp.a(alt_irq_handler.o)
- .debug_line    0x0000000000002e56       0x50 ../projeto_final_bsp//libhal_bsp.a(alt_irq_vars.o)
- .debug_line    0x0000000000002ea6      0x1a0 ../projeto_final_bsp//libhal_bsp.a(alt_open.o)
- .debug_line    0x0000000000003046       0xb6 ../projeto_final_bsp//libhal_bsp.a(alt_release_fd.o)
- .debug_line    0x00000000000030fc      0x160 ../projeto_final_bsp//libhal_bsp.a(alt_tick.o)
- .debug_line    0x000000000000325c       0x57 ../projeto_final_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_line    0x00000000000032b3       0xb3 ../projeto_final_bsp//libhal_bsp.a(alt_exception_entry.o)
- .debug_line    0x0000000000003366      0x103 ../projeto_final_bsp//libhal_bsp.a(alt_find_file.o)
- .debug_line    0x0000000000003469       0xfa ../projeto_final_bsp//libhal_bsp.a(alt_get_fd.o)
- .debug_line    0x0000000000003563       0xa0 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush.o)
- .debug_line    0x0000000000003603       0xd9 ../projeto_final_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_line    0x00000000000036dc      0x172 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-exit.o)
- .debug_line    0x000000000000384e       0x5e /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-int_errno.o)
- .debug_line    0x00000000000038ac      0x18f /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memcmp.o)
- .debug_line    0x0000000000003a3b      0x213 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putchar.o)
- .debug_line    0x0000000000003c4e      0x28e /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-__call_atexit.o)
- .debug_line    0x0000000000003edc      0x259 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putc.o)
- .debug_line    0x0000000000004135      0x250 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_dev.o)
- .debug_line    0x0000000000004385      0x223 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-writer.o)
- .debug_line    0x00000000000045a8       0x85 ../projeto_final_bsp//libhal_bsp.a(alt_exit.o)
- .debug_line    0x000000000000462d      0x2ae ../projeto_final_bsp//libhal_bsp.a(alt_write.o)
+ .debug_line    0x0000000000000072      0x359 obj/default/projeto_final.o
+ .debug_line    0x00000000000003cb      0x291 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-sprintf.o)
+ .debug_line    0x000000000000065c      0x17a /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-strlen.o)
+ .debug_line    0x00000000000007d6      0x736 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-svfprintf.o)
+ .debug_line    0x0000000000000f0c      0x255 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_str.o)
+ .debug_line    0x0000000000001161      0x15a /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-impure.o)
+ .debug_line    0x00000000000012bb      0x1ac /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memmove.o)
+ .debug_line    0x0000000000001467      0x303 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/libgcc.a(lib2-divmod.o)
+ .debug_line    0x000000000000176a       0xa6 ../projeto_final_bsp//libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000000000001810       0x7d ../projeto_final_bsp//libhal_bsp.a(alt_main.o)
+ .debug_line    0x000000000000188d      0x152 ../projeto_final_bsp//libhal_bsp.a(alt_printf.o)
+ .debug_line    0x00000000000019df       0x50 ../projeto_final_bsp//libhal_bsp.a(alt_putchar.o)
+ .debug_line    0x0000000000001a2f       0xbf ../projeto_final_bsp//libhal_bsp.a(alt_usleep.o)
+ .debug_line    0x0000000000001aee      0x14f ../projeto_final_bsp//libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000000000001c3d      0x102 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x0000000000001d3f       0xe8 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x0000000000001e27       0xc6 ../projeto_final_bsp//libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x0000000000001eed       0xfd ../projeto_final_bsp//libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_line    0x0000000000001fea      0x23e ../projeto_final_bsp//libhal_bsp.a(altera_up_avalon_character_lcd.o)
+ .debug_line    0x0000000000002228       0xe1 ../projeto_final_bsp//libhal_bsp.a(alt_busy_sleep.o)
+ .debug_line    0x0000000000002309      0x1ac ../projeto_final_bsp//libhal_bsp.a(alt_close.o)
+ .debug_line    0x00000000000024b5       0x6e ../projeto_final_bsp//libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x0000000000002523      0x19f ../projeto_final_bsp//libhal_bsp.a(alt_dev.o)
+ .debug_line    0x00000000000026c2      0x106 ../projeto_final_bsp//libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x00000000000027c8       0x51 ../projeto_final_bsp//libhal_bsp.a(alt_errno.o)
+ .debug_line    0x0000000000002819       0xb8 ../projeto_final_bsp//libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x00000000000028d1       0x56 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x0000000000002927      0x123 ../projeto_final_bsp//libhal_bsp.a(alt_iic.o)
+ .debug_line    0x0000000000002a4a       0xfc ../projeto_final_bsp//libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x0000000000002b46      0x1d2 ../projeto_final_bsp//libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x0000000000002d18       0x6b ../projeto_final_bsp//libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x0000000000002d83       0xd4 ../projeto_final_bsp//libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x0000000000002e57       0x50 ../projeto_final_bsp//libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x0000000000002ea7      0x1a0 ../projeto_final_bsp//libhal_bsp.a(alt_open.o)
+ .debug_line    0x0000000000003047       0xb6 ../projeto_final_bsp//libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x00000000000030fd      0x160 ../projeto_final_bsp//libhal_bsp.a(alt_tick.o)
+ .debug_line    0x000000000000325d       0x57 ../projeto_final_bsp//libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x00000000000032b4       0xb3 ../projeto_final_bsp//libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x0000000000003367      0x103 ../projeto_final_bsp//libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x000000000000346a       0xfa ../projeto_final_bsp//libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x0000000000003564       0xa0 ../projeto_final_bsp//libhal_bsp.a(alt_icache_flush.o)
+ .debug_line    0x0000000000003604       0xd9 ../projeto_final_bsp//libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_line    0x00000000000036dd      0x172 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-exit.o)
+ .debug_line    0x000000000000384f       0x5e /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x00000000000038ad      0x18f /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-memcmp.o)
+ .debug_line    0x0000000000003a3c      0x213 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putchar.o)
+ .debug_line    0x0000000000003c4f      0x28e /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-__call_atexit.o)
+ .debug_line    0x0000000000003edd      0x259 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-putc.o)
+ .debug_line    0x0000000000004136      0x250 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_line    0x0000000000004386      0x223 /opt/Quartus/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/bin/../lib/gcc/nios2-elf/10.1.1/../../../../../H-x86_64-pc-linux-gnu/nios2-elf/lib/libsmallc.a(lib_a-writer.o)
+ .debug_line    0x00000000000045a9       0x85 ../projeto_final_bsp//libhal_bsp.a(alt_exit.o)
+ .debug_line    0x000000000000462e      0x2ae ../projeto_final_bsp//libhal_bsp.a(alt_write.o)
 
 .debug_frame    0x0000000000000000      0xfa4
  *(.debug_frame)

@@ -26,12 +26,6 @@ int calcula(int operacao, int operando1, int operando2){
 }
 
 void limpa_lcd(alt_up_character_lcd_dev * lcd){
-	// Apagar escrevendo espaços
-//	alt_up_character_lcd_set_cursor_pos(lcd, 0, 0);
-//	alt_up_character_lcd_string(lcd, "                ");
-//	alt_up_character_lcd_set_cursor_pos(lcd, 0, 1);
-//	alt_up_character_lcd_string(lcd, "                ");
-
 	// Apagar inserindo espaço em cada posição
 	for (int y = 0; y < 2; y++){
 		alt_up_character_lcd_set_cursor_pos(lcd, 0, y);
@@ -95,20 +89,12 @@ int main(void) {
 	else alt_printf ("Opened character LCD device\n");
 
 	/* Initialize the character display */
-//	alt_up_character_lcd_init (dispositivo_LCD);
-
-//	alt_up_character_lcd_cursor_off(dispositivo_LCD);
+	alt_up_character_lcd_init (dispositivo_LCD);
 
 	int estado = 0, operacao = 0, operando1 = 0, operando2 = 0, enter = 0, resultado_final = 0;
 	char primeira_linha[16], segunda_linha[16], operador[2], conta[14], pos_x = 0, linha_atual = 0;
 
 	while (1){
-//		limpa_linha(dispositivo_LCD, linha_atual);
-//		limpa_linha(dispositivo_LCD, linha_atual);
-//		limpa_lcd(dispositivo_LCD);
-//		alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 0);
-//		alt_up_character_lcd_string(dispositivo_LCD, primeira_linha);
-
 		switch (estado) {
 			case idle:
 			   operacao = ler_operacao();
@@ -149,10 +135,6 @@ int main(void) {
 			   break;
 
 			case op1_ent:
-//			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 0);
-//			   traduz_operador_extenso(operacao, primeira_linha);
-//			   alt_up_character_lcd_string(dispositivo_LCD, primeira_linha);
-
 			   operando1 = ler_operando();
 			   IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE,operando1);
 
@@ -180,10 +162,6 @@ int main(void) {
 			   break;
 
 			case op2_ent:
-//			   traduz_operador_extenso(operacao, primeira_linha);
-//			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 0);
-//			   alt_up_character_lcd_string(dispositivo_LCD, primeira_linha);
-
 			   operando1 = ler_operando();
 			   IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE,operando1);
 
@@ -202,9 +180,6 @@ int main(void) {
 			   break;
 
 			case op_2:
-//			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 0);
-//			   alt_up_character_lcd_string(dispositivo_LCD, primeira_linha);
-
 			   operando2 = ler_operando();
 			   IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE,operando2);
 
@@ -233,17 +208,8 @@ int main(void) {
 			   break;
 
 			case resultado:
-//			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 0);
-//			   alt_up_character_lcd_string(dispositivo_LCD, primeira_linha);
-
 			   resultado_final = calcula(operacao, operando1, operando2);
 			   IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE, resultado_final);
-
-//			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 1);
-//			   sprintf(segunda_linha, "%s = %d", conta, resultado_final);
-//			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, 0, 1);
-//			   alt_up_character_lcd_string(dispositivo_LCD, segunda_linha);
-
 
 			   sprintf(segunda_linha, "%d", resultado_final);
 			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, pos_x, 1);
