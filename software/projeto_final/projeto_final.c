@@ -41,12 +41,6 @@ void limpa_linha(alt_up_character_lcd_dev * lcd, int linha){
 	alt_up_character_lcd_set_cursor_pos(lcd, 0, linha);
 }
 
-void limpa_linha_atual(alt_up_character_lcd_dev * lcd){
-	alt_up_character_lcd_shift_cursor(lcd, -16);
-	alt_up_character_lcd_string(lcd, "                ");
-	alt_up_character_lcd_shift_cursor(lcd, -16);
-}
-
 int ler_operando(){
 	int entrada = IORD(ENTRADA_PIO_BASE,0);
 	return (int) entrada & 65535;
@@ -89,10 +83,10 @@ int main(void) {
 	else alt_printf ("Opened character LCD device\n");
 
 	/* Initialize the character display */
-	alt_up_character_lcd_init (dispositivo_LCD);
+	alt_up_character_lcd_init(dispositivo_LCD);
 
 	int estado = 0, operacao = 0, operando1 = 0, operando2 = 0, enter = 0, resultado_final = 0;
-	char primeira_linha[16], segunda_linha[16], operador[2], conta[14], pos_x = 0, linha_atual = 0;
+	char primeira_linha[16], segunda_linha[16], operador[2], conta[14], pos_x = 0;
 
 	while (1){
 		switch (estado) {
@@ -130,7 +124,6 @@ int main(void) {
 
 				  // Atualiza a posição x
 				  pos_x = 0;
-				  linha_atual = 1;
 			   }
 			   break;
 
@@ -171,7 +164,8 @@ int main(void) {
 
 			   pos_x = strlen(conta);
 
-			   // Desloca o cursor para a esquerda
+			   // Desloca o cursor para a esquerda de forma que
+			   // fique em cima do último dígito do operando
 			   alt_up_character_lcd_shift_cursor(dispositivo_LCD, -3);
 			   enter = ler_enter();
 
@@ -215,11 +209,16 @@ int main(void) {
 			   alt_up_character_lcd_set_cursor_pos(dispositivo_LCD, pos_x, 1);
 			   alt_up_character_lcd_string(dispositivo_LCD, segunda_linha);
 
+			   // Desloca o cursor para fora da tela
+			   alt_up_character_lcd_shift_cursor(dispositivo_LCD, 16 - strlen(segunda_linha));
+
 			   enter = ler_enter();
 
 			   if (enter) {
 				   estado = idle;
-				   limpa_lcd(dispositivo_LCD);
+
+				   // Reinicia o LCD
+				   alt_up_character_lcd_init(dispositivo_LCD);
 			   }
 			   break;
 			default:
