@@ -5,7 +5,7 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
  
 entity bin2bcd is
-    generic(N: positive := 17);
+    generic(N: positive := 19);
     port(
         clk, reset: in std_logic;
         binary_in: in std_logic_vector(N-1 downto 0);

@@ -43,7 +43,8 @@ void limpa_linha(alt_up_character_lcd_dev * lcd, int linha){
 
 int ler_operando(){
 	int entrada = IORD(ENTRADA_PIO_BASE,0);
-	return (int) entrada & 65535;
+//	return (int) entrada & 65535;
+	return (int) entrada & 262143;
 }
 
 int ler_operacao(){
@@ -86,7 +87,7 @@ int main(void) {
 	alt_up_character_lcd_init(dispositivo_LCD);
 
 	int estado = 0, operacao = 0, operando1 = 0, operando2 = 0, enter = 0, resultado_final = 0;
-	char primeira_linha[16], segunda_linha[16], operador[2], conta[14], pos_x = 0;
+	char primeira_linha[16], segunda_linha[16], operador[2], conta[16], pos_x = 0;
 
 	while (1){
 		switch (estado) {

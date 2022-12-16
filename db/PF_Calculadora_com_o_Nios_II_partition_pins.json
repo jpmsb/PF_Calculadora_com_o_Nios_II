@@ -72,6 +72,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "LEDR[17]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[0]",
+					"strict" : false
+				},
+				{
 					"name" : "HEX0[0]",
 					"strict" : false
 				},

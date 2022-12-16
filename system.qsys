@@ -275,7 +275,7 @@
   <parameter name="resetValue" value="0" />
   <parameter name="simDoTestBenchWiring" value="false" />
   <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="17" />
+  <parameter name="width" value="19" />
  </module>
  <module name="nios2_0" kind="altera_nios2_gen2" version="20.1" enabled="1">
   <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="1" />

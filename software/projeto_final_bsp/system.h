@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_0' in SOPC Builder design 'system'
  * SOPC Builder design path: ../../system.sopcinfo
  *
- * Generated: Thu Dec 15 18:37:52 BRT 2022
+ * Generated: Fri Dec 16 11:58:10 BRT 2022
  */
 
 /*
@@ -266,7 +266,7 @@
 #define LED_PIO_BIT_CLEARING_EDGE_REGISTER 0
 #define LED_PIO_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define LED_PIO_CAPTURE 0
-#define LED_PIO_DATA_WIDTH 17
+#define LED_PIO_DATA_WIDTH 19
 #define LED_PIO_DO_TEST_BENCH_WIRING 0
 #define LED_PIO_DRIVEN_SIM_VALUE 0
 #define LED_PIO_EDGE_TYPE "NONE"
@@ -350,7 +350,7 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1671140173
+#define SYSID_TIMESTAMP 1671202607
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */

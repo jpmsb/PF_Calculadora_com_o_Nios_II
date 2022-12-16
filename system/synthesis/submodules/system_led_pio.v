@@ -33,7 +33,7 @@ module system_led_pio (
                       )
 ;
 
-  output  [ 16: 0] out_port;
+  output  [ 18: 0] out_port;
   output  [ 31: 0] readdata;
   input   [  1: 0] address;
   input            chipselect;
@@ -44,19 +44,19 @@ module system_led_pio (
 
 
 wire             clk_en;
-reg     [ 16: 0] data_out;
-wire    [ 16: 0] out_port;
-wire    [ 16: 0] read_mux_out;
+reg     [ 18: 0] data_out;
+wire    [ 18: 0] out_port;
+wire    [ 18: 0] read_mux_out;
 wire    [ 31: 0] readdata;
   assign clk_en = 1;
   //s1, which is an e_avalon_slave
-  assign read_mux_out = {17 {(address == 0)}} & data_out;
+  assign read_mux_out = {19 {(address == 0)}} & data_out;
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)
           data_out <= 0;
       else if (chipselect && ~write_n && (address == 0))
-          data_out <= writedata[16 : 0];
+          data_out <= writedata[18 : 0];
     end
 
 

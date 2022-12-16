@@ -8,7 +8,7 @@
 			lcd_16x2_external_interface_EN         : out   std_logic;                                        -- EN
 			lcd_16x2_external_interface_RS         : out   std_logic;                                        -- RS
 			lcd_16x2_external_interface_RW         : out   std_logic;                                        -- RW
-			led_pio_external_connection_export     : out   std_logic_vector(16 downto 0);                    -- export
+			led_pio_external_connection_export     : out   std_logic_vector(18 downto 0);                    -- export
 			reset_reset_n                          : in    std_logic                     := 'X'              -- reset_n
 		);
 	end component system;
